@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 15: Form: Input Elements, Label and Fieldset</title>
+</head>
+
+<body>
+    <h1>Student Profile</h1>
+    <form>
+        <fieldset>
+            <legend>Personal information</legend>
+            <label for="fullname">Full name</label>
+            <input id="fullname"name="fullname" type="text">
+            </br></br>
+            <label for="birthdate">Date of birth</label>
+            <input id="birthdate"name="birthdate" type="date">
+            </br></br>
+ 
+            <label for="email">Email</label>
+            <input id="email" name="email"type="email">
+            </br></br>
+        </fieldset>
+        <fieldset>
+            <legend>Study preferences</legend>
+            <label>
+                <input type="radio" name="mode" value="full"> Full
+                time
+            </label>
+                <label>
+                    <input type="radio" name="mode" value="part"> Part time
+                </label>
+                <label>
+                    <input type="checkbox" name="updates"> Send updates
+                </label>
+            </fieldset>
+        <button type="submit">Save</button>
+    </form>
+</body>
+
+</html>

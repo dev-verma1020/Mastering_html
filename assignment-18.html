@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 18: Mini Project: Accessible Student Admission Page</title>
+</head>
+
+<body>
+    <a href="#main">Skip to application</a>
+    <header>
+        <h1>ABC College</h1>
+        <p>Student Admission Application</p>
+    </header>
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#programs">Programs</a></li>
+            <li><a href="#requirements">Requirements</a></li>
+            <li><a href="#application">Apply</a></li>
+        </ul>
+    </nav>
+    <main id="main">
+        <section id="programs">
+            <h2>Programs</h2>
+            <ul>
+                <li>Computer Science</li>
+                <li>Business Studies</li>
+                <li>Arts and Humanities</li>
+            </ul>
+        </section>
+        <section id="requirements">
+            <h2>Requirements</h2>
+            <p>Prepare your contact and education details.</p>
+        </section>
+        <section id="application">
+            <h2>Apply</h2>
+            <form>
+                <fieldset>
+                    <legend>Applicant details</legend>
+                    <label for="student-name">Full name *</label>
+                    <input id="student-name" name="name"  required>
+                </br>
+                <label for="student-email">Email address *</label>
+                <input id="student-email" name="email" type="email" 
+                        required></br>
+                        <label for="phone">Phone</label>
+                        <input id="phone" name="phone" type="tel">
+                </fieldset>
+                <fieldset>
+                    <legend>Education</legend>
+                    <label for="program">Program *</label>
+                    <select id="program" name="program"
+                        required>
+                        <option value="">Choose a program</option>
+                        <option>Computer Science</option>
+                        <option>Business Studies</option>
+                        <option>Arts and Humanities</option>
+                    </select>
+                </br>
+                <label for="education">Most recent qualification</label>
+                <textarea id="education"
+                        name="education" rows="4"></textarea>
+                </fieldset>
+                <p>* Required fields</p>
+                <button type="submit">Submit application</button>
+            </form>
+        </section>
+    </main>
+    <footer><a href="mailto:admissions@example.edu">Contact admissions</a></footer>
+</body>
+
+</html>

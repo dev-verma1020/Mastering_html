@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Assignment 14 - Nested and Responsive Tables</title>
+
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: lightblue;
+        }
+
+        .nested {
+            width: 100%;
+        }
+
+        .responsive {
+            overflow-x: auto;
+        }
+
+        .main {
+            min-width: 650px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Assignment 14: Nested and Responsive Tables</h2>
+
+    <h3>Student Workshop Schedule</h3>
+
+    <div class="responsive">
+        <table class="main">
+
+            <tr>
+                <th>Day</th>
+                <th>Workshop Details</th>
+                <th>Instructor</th>
+                <th>Venue</th>
+                <th>Timing</th>
+            </tr>
+
+            <tr>
+                <td>Monday</td>
+
+                <td>
+                    <table class="nested">
+                        <tr>
+                            <th>Group</th>
+                            <th>Topic</th>
+                        </tr>
+
+                        <tr>
+                            <td>G1</td>
+                            <td>HTML</td>
+                        </tr>
+
+                        <tr>
+                            <td>G2</td>
+                            <td>CSS</td>
+                        </tr>
+                    </table>
+                </td>
+
+                <td>TEACHER</td>
+                <td>Room 105</td>
+                <td>10 AM - 12 PM</td>
+            </tr>
+
+        </table>
+    </div>
+
+</body>
+</html>
